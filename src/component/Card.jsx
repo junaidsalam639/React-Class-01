@@ -34,10 +34,11 @@ export default function RecipeReviewCard() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <div className="card-container d-inline-flex  justify-content-around">
+    <Card sx={{ maxWidth: 288 }} className='card mt-5 m-4'>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+          <Avatar sx={{ bgcolor: "#0984e3" }} aria-label="recipe">
             R
           </Avatar>
         }
@@ -54,7 +55,7 @@ export default function RecipeReviewCard() {
         height="194"
         image="https://as1.ftcdn.net/v2/jpg/02/97/67/70/1000_F_297677001_zX7ZzRq8DObUV5IWTHAIhAae6DuiEQh4.jpg"
         alt="Paella dish"
-      />
+        />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           This impressive paella is a perfect party dish and a fun meal to cook
@@ -74,7 +75,7 @@ export default function RecipeReviewCard() {
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
-        >
+          >
           <ExpandMoreIcon />
         </ExpandMore>
       </CardActions>
@@ -108,6 +109,7 @@ export default function RecipeReviewCard() {
         </CardContent>
       </Collapse>
     </Card>
+          </div>
   );
 }
 

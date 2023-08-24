@@ -14,6 +14,10 @@ function App() {
     <RecipeReviewCard/>
     <RecipeReviewCard/>
     <RecipeReviewCard/>
+    <RecipeReviewCard/>
+    <RecipeReviewCard/>
+    <RecipeReviewCard/>
+    <RecipeReviewCard/>
     </div>
   );
 }
