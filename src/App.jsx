@@ -1,13 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import Card from './component/Card';
+import Navbar from './component/Navbar'
+import RecipeReviewCard from './component/Card';
+import Slider from './component/Slider';
+
 
 function App() {
   return (
     <div className="App">
-       <Card></Card>
-       <Card></Card>
-       <Card></Card>
+    <Navbar/>
+    <Slider/>
+    <RecipeReviewCard/>
+    <RecipeReviewCard/>
+    <RecipeReviewCard/>
+    <RecipeReviewCard/>
     </div>
   );
 }
